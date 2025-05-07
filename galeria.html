@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Mágica - Mundo Disney</title>
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="galeria-magica.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Estrelas de fundo -->
+    <div class="stars"></div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="magic-text">Mundo</span>Disney
+                <span class="magic-wand">✨</span>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="animacoes-classicas.html" class="nav-link">Animações Clássicas</a></li>
+                    <li><a href="princesas-disney.html" class="nav-link">Princesas</a></li>
+                    <li><a href="pixar.html" class="nav-link">Pixar</a></li>
+                    <li><a href="marvel.html" class="nav-link">Marvel</a></li>
+                    <li><a href="index.html#trailers" class="nav-link">Trailers</a></li>
+                    <li><a href="galeria-magica.html" class="nav-link active">Galeria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gallery-hero">
+        <div class="gallery-hero-overlay"></div>
+        <div class="container">
+            <div class="gallery-hero-content">
+                <h1 class="animated-title">Galeria Mágica</h1>
+                <p class="hero-text">Explore imagens encantadoras do universo Disney, desde os clássicos atemporais até as mais recentes produções.</p>
+                <div class="gallery-stats">
+                    <div class="gallery-stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-text">Imagens</span>
+                    </div>
+                    <div class="gallery-stat">
+                        <span class="stat-number">10</span>
+                        <span class="stat-text">Categorias</span>
+                    </div>
+                    <div class="gallery-stat">
+                        <span class="stat-number">90</span>
+                        <span class="stat-text">Anos de Magia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter Section -->
+   
+
+    <!-- Featured Images -->
+    <section class="featured-images">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-title">Imagens em Destaque</h2>
+                <p class="section-subtitle">As imagens mais mágicas e populares da nossa coleção</p>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-item large">
+                    <img src="./img/22.jpg" alt="Castelo da Cinderela" onerror="this.src='/placeholder.svg?height=500&width=800'; this.onerror=null;">
+                    <div class="featured-overlay">
+                        <h3>Castelo da Cinderela</h3>
+                        <p>O icônico símbolo da Disney, iluminado ao anoitecer</p>
+                        <span class="featured-tag">Parques</span>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="./img/02.jpg" alt="Mickey Mouse" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                    <div class="featured-overlay">
+                        <h3>Mickey Mouse</h3>
+                        <p>O personagem que começou tudo</p>
+                        <span class="featured-tag">Clássicos</span>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="./img/03.jpg" alt="Elsa" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                    <div class="featured-overlay">
+                        <h3>Elsa</h3>
+                        <p>A Rainha do Gelo de Arendelle</p>
+                        <span class="featured-tag">Princesas</span>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="./img/vingadores.jpg" alt="Vingadores" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                    <div class="featured-overlay">
+                        <h3>Vingadores</h3>
+                        <p>Os heróis mais poderosos da Terra</p>
+                        <span class="featured-tag">Marvel</span>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="./img/30.jpg" alt="Woody e Buzz" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                    <div class="featured-overlay">
+                        <h3>Woody e Buzz</h3>
+                        <p>A dupla icônica de Toy Story</p>
+                        <span class="featured-tag">Pixar</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery -->
+    <section class="main-gallery">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-title">Explore Nossa Coleção</h2>
+                <p class="section-subtitle">Navegue por nossa extensa coleção de imagens mágicas</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- Clássicos -->
+                <div class="gallery-item" data-category="classics">
+                    <div class="gallery-image">
+                        <img src="./img/branca.jpg" alt="Branca de Neve" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Branca de Neve</h3>
+                        <span class="gallery-tag">Clássicos</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classics">
+                    <div class="gallery-image">
+                        <img src="./img/33.jpg" alt="Pinóquio" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Pinóquio</h3>
+                        <span class="gallery-tag">Clássicos</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classics">
+                    <div class="gallery-image">
+                        <img src="./img/31.jpg" alt="Dumbo" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Dumbo</h3>
+                        <span class="gallery-tag">Clássicos</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classics">
+                    <div class="gallery-image">
+                        <img src="./img/06.jpg" alt="Bambi" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Bambi</h3>
+                        <span class="gallery-tag">Clássicos</span>
+                    </div>
+                </div>
+
+                <!-- Princesas -->
+                <div class="gallery-item" data-category="princesses">
+                    <div class="gallery-image">
+                        <img src="./img/34.jpg" alt="Cinderela" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Cinderela</h3>
+                        <span class="gallery-tag">Princesas</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="princesses">
+                    <div class="gallery-image">
+                        <img src="./img/36.jpg" alt="Ariel" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Ariel</h3>
+                        <span class="gallery-tag">Princesas</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="princesses">
+                    <div class="gallery-image">
+                        <img src="./img/10.jpg" alt="Bela" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+ 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Bela</h3>
+                        <span class="gallery-tag">Princesas</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="princesses">
+                    <div class="gallery-image">
+                        <img src="./img/37.jpg" alt="Moana" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Moana</h3>
+                        <span class="gallery-tag">Princesas</span>
+                    </div>
+                </div>
+
+                <!-- Pixar -->
+                <div class="gallery-item" data-category="pixar">
+                    <div class="gallery-image">
+                        <img src="./img/08.jpg" alt="Up: Altas Aventuras" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Up: Altas Aventuras</h3>
+                        <span class="gallery-tag">Pixar</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="pixar">
+                    <div class="gallery-image">
+                        <img src="./img/Wall.jpg" alt="WALL-E" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>WALL-E</h3>
+                        <span class="gallery-tag">Pixar</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="pixar">
+                    <div class="gallery-image">
+                        <img src="./img/001.jpg" alt="Divertida Mente" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Divertida Mente</h3>
+                        <span class="gallery-tag">Pixar</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="pixar">
+                    <div class="gallery-image">
+                        <img src="./img/coco.jpg" alt="Viva: A Vida é uma Festa" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Viva: A Vida é uma Festa</h3>
+                        <span class="gallery-tag">Pixar</span>
+                    </div>
+                </div>
+
+                <!-- Marvel -->
+                <div class="gallery-item" data-category="marvel">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/0b/f1/b9/0bf1b96b94cb9fcbd2f1cc08ff296180.jpg" alt="Homem de Ferro" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Homem de Ferro</h3>
+                        <span class="gallery-tag">Marvel</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="marvel">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/a3/58/97/a35897bb64fb9ed9c92d6c99a911bbb5.jpg" alt="Capitão América" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Capitão América</h3>
+                        <span class="gallery-tag">Marvel</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="marvel">
+                    <div class="gallery-image">
+                        <img src="./img/40.jpg" alt="Pantera Negra" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Pantera Negra</h3>
+                        <span class="gallery-tag">Marvel</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="marvel">
+                    <div class="gallery-image">
+                        <img src="./img/41.jpg" alt="Guardiões da Galáxia" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Guardiões da Galáxia</h3>
+                        <span class="gallery-tag">Marvel</span>
+                    </div>
+                </div>
+
+                <!-- Star Wars -->
+                <div class="gallery-item" data-category="starwars">
+                    <div class="gallery-image">
+                        <img src="./img/002.jpg" alt="Darth Vader" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Darth Vader</h3>
+                        <span class="gallery-tag">Star Wars</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="starwars">
+                    <div class="gallery-image">
+                        <img src="./img/52.jpg" alt="Rey" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Rey</h3>
+                        <span class="gallery-tag">Star Wars</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="starwars">
+                    <div class="gallery-image">
+                        <img src="./img/003.jpg" alt="Grogu (Baby Yoda)" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Grogu (Baby Yoda)</h3>
+                        <span class="gallery-tag">Star Wars</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="starwars">
+                    <div class="gallery-image">
+                        <img src="./img/008.jpg" alt="O Mandaloriano" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>O Mandaloriano</h3>
+                        <span class="gallery-tag">Star Wars</span>
+                    </div>
+                </div>
+
+                <!-- Parques -->
+                <div class="gallery-item" data-category="parks">
+                    <div class="gallery-image">
+                        <img src="./img/004.jpg" alt="Magic Kingdom" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Magic Kingdom</h3>
+                        <span class="gallery-tag">Parques</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="parks">
+                    <div class="gallery-image">
+                        <img src="./img/005.jpg" alt="EPCOT" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>EPCOT</h3>
+                        <span class="gallery-tag">Parques</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="parks">
+                    <div class="gallery-image">
+                        <img src="./img/006.jpg" alt="Animal Kingdom" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Animal Kingdom</h3>
+                        <span class="gallery-tag">Parques</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="parks">
+                    <div class="gallery-image">
+                        <img src="./img/007.jpg" alt="Disneyland Paris" onerror="this.src='/placeholder.svg?height=300&width=400'; this.onerror=null;">
+                        <div class="gallery-overlay">
+                            <div class="gallery-actions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Disneyland Paris</h3>
+                        <span class="gallery-tag">Parques</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-image" src="/placeholder.svg" alt="">
+            <div class="lightbox-caption">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-description"></p>
+            </div>
+            <button class="lightbox-prev">&#10094;</button>
+            <button class="lightbox-next">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Upload Section -->
+    <!-- Upload Section -->
+<section class="upload-section">
+    <div class="container">
+        <div class="section-heading">
+            <h2 class="section-title">Compartilhe Sua Magia</h2>
+            <h2 class="section-subtitle">Envie suas próprias fotos mágicas para nossa galeria</h2>
+
+        </div>
+        
+        <div class="upload-area rectangular">
+            <div class="upload-icon">📷</div>
+            <div class="upload-text-content">
+                <h3>Solte seus arquivos aqui</h3>
+                <div class="upload-actions">
+                    <label class="upload-btn">
+                        Selecionar Arquivos
+                        <input type="file" id="file-input" accept="image/jpeg, image/png, image/gif" multiple>
+                    </label>
+                    <p class="upload-info">Formatos: JPG, PNG, GIF (Até 5MB)</p>
+                </div>
+            </div>
+        </div>
+            
+            <div class="upload-form">
+                <div class="form-group">
+                    <label for="upload-title">Título da Imagem</label>
+                    <input type="text" id="upload-title" placeholder="Ex: Minha visita ao Castelo da Cinderela">
+                </div>
+                
+                <div class="form-group">
+                    <label for="upload-description">Descrição</label>
+                    <textarea id="upload-description" rows="4" placeholder="Conte-nos sobre sua imagem..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="upload-category">Categoria</label>
+                    <select id="upload-category">
+                        <option value="">Selecione uma categoria</option>
+                        <option value="classics">Clássicos</option>
+                        <option value="princesses">Princesas</option>
+                        <option value="pixar">Pixar</option>
+                        <option value="marvel">Marvel</option>
+                        <option value="starwars">Star Wars</option>
+                        <option value="parks">Parques</option>
+                    </select>
+                </div>
+                
+                <button class="submit-upload-btn">Enviar Imagem</button>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Newsletter -->
+
+    <!-- Footer -->
+    <footer id="contato">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-col">
+                        <h3>Mundo Disney</h3>
+                        <p>Seu portal para o universo mágico dos filmes Disney, Pixar, Marvel e muito mais.</p>
+                    
+                    </div>
+                    <div class="footer-col">
+                        <h3>Links Mágicos</h3>
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#filmes">Filmes</a></li>
+                            <li><a href="#personagens">Personagens</a></li>
+                            <li><a href="#lancamentos">Lançamentos</a></li>
+                            <li><a href="#trailers">Trailers</a></li>
+                            <li><a href="#galeria">Galeria</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Categorias</h3>
+                        <ul>
+                            <li><a href="#">Animações Clássicas</a></li>
+                            <li><a href="#">Princesas Disney</a></li>
+                            <li><a href="#">Pixar</a></li>
+                            <li><a href="#">Marvel</a></li>
+                            <li><a href="#">Star Wars</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Contato</h3>
+                        <ul class="contact-info">
+                            <li><span>✉</span> contato@mundodisney.com</li>
+                            <li><span>☎</span> (11) 1234-5678</li>
+                            <li><span>📍</span> EPCOT: Bay Lake, Flórida 32836, EUA</li>
+                        </ul>
+                        <div class="footer-app">
+                            <p>Baixe nosso aplicativo:</p>
+                            <div class="app-buttons">
+                                <a href="https://apps.apple.com/br/app/disney/id1446075923" class="app-btn" target="_blank" rel="noopener noreferrer">App Store</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.disney.disneyplus" class="app-btn" target="_blank" rel="noopener noreferrer">Google Play</a>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    &copy; 2025 Mundo Disney.  Feito por: Heloisa Sabino Bolognesi 
+                </div>
+                <div class="footer-links">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+        <div class="castle-footer"></div>
+    </footer>
+</body>
+</html>

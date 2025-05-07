@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Mágico Disney</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Estrelas de fundo -->
+    <div class="stars"></div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="magic-text">Mundo</span>Disney
+                <span class="magic-wand">✨</span>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link">Início</a></li>
+                    <li><a href="#filmes" class="nav-link">Filmes</a></li>
+                    <li><a href="#personagens" class="nav-link">Personagens</a></li>
+                    <li><a href="#lancamentos" class="nav-link">Lançamentos</a></li>
+                    <li><a href="#trailers" class="nav-link">Trailers</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="castle-silhouette"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animated-title">Descubra a Magia dos Filmes Disney</h1>
+                <p class="hero-text">Embarque em uma jornada mágica através dos melhores filmes e personagens que marcaram gerações e continuam encantando o mundo.</p>
+                <div class="hero-buttons">
+                    <a href="#filmes" class="btn btn-primary">
+                        <span class="btn-text">Explorar Filmes</span>
+                        <span class="btn-shine"></span>
+                    </a>
+                    <a href="#trailers" class="btn btn-secondary">
+                        <span class="btn-text">Ver Trailers</span>
+                    </a>
+                </div>
+                <div class="hero-badges">
+                    <div class="badge">
+                        <span class="badge-number">100+</span>
+                        <span class="badge-text">Filmes</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-number">500+</span>
+                        <span class="badge-text">Personagens</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-number">95%</span>
+                        <span class="badge-text">Satisfação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="magic-dust"></div>
+    </section>
+
+    <!-- Categorias -->
+    <section id="filmes" class="categories">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-title">Universos Mágicos</h2>
+                <p class="section-subtitle">Explore os diferentes universos que compõem o mundo Disney</p>
+            </div>
+            <div class="category-container">
+                <div class="category-card">
+                    <!-- Tag para imagem com fallback -->
+                    <div class="category-img">
+                        <img src="./img/rei leao 3.jpg" alt="Animações Clássicas" class="img-cover" onerror="this.src='/placeholder.svg?height=200&width=300'; this.onerror=null;">
+                    </div>
+                    <div class="category-content">
+                        <div class="category-icon">🏰</div>
+                        <h3>Animações Clássicas</h3>
+                        <p>Reviva os clássicos que encantaram gerações e continuam a emocionar com suas histórias atemporais.</p>
+                        <div class="category-meta">
+                            <span class="category-count">25+ filmes</span>
+                            <span class="category-year">1937 - 2023</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Ver Mais</a>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="./img/Princesas.jpg" alt="Princesas Disney" class="img-cover" onerror="this.src='/placeholder.svg?height=200&width=300'; this.onerror=null;">
+                    </div>
+                    <div class="category-content">
+                        <div class="category-icon">👑</div>
+                        <h3>Princesas Disney</h3>
+                        <p>Conheça as histórias de coragem e determinação das princesas que inspiram gerações com sua força.</p>
+                        <div class="category-meta">
+                            <span class="category-count">12+ filmes</span>
+                            <span class="category-year">1937 - 2023</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Ver Mais</a>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="./img/Pixar 2.jpg" alt="Pixar" class="img-cover" onerror="this.src='/placeholder.svg?height=200&width=300'; this.onerror=null;">
+                    </div>
+                    <div class="category-content">
+                        <div class="category-icon">🚀</div>
+                        <h3>Pixar</h3>
+                        <p>Aventuras emocionantes e personagens inesquecíveis que conquistaram o coração de todos os públicos.</p>
+                        <div class="category-meta">
+                            <span class="category-count">20+ filmes</span>
+                            <span class="category-year">1995 - 2023</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Ver Mais</a>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="./img/Marvel.jpg" alt="Marvel" class="img-cover" onerror="this.src='/placeholder.svg?height=200&width=300'; this.onerror=null;">
+                    </div>
+                    <div class="category-content">
+                        <div class="category-icon">🦸‍♂️</div>
+                        <h3>Marvel</h3>
+                        <p>Super-heróis e histórias épicas do universo cinematográfico que revolucionou o gênero de ação.</p>
+                        <div class="category-meta">
+                            <span class="category-count">30+ filmes</span>
+                            <span class="category-year">2008 - 2023</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Ver Mais</a>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+            </div>
+        </div>
+        <div class="categories-decoration"></div>
+    </section>
+
+    <!-- Personagens -->
+    <section id="personagens" class="characters">
+        <div class="container">
+            <div class="section-heading light">
+                <h2 class="section-title">Personagens Inesquecíveis</h2>
+                <p class="section-subtitle">Conheça os personagens que marcaram gerações</p>
+            </div>
+            <div class="character-slider">
+                <div class="character-card">
+                    <div class="character-img-wrapper">
+                        <!-- Tag para imagem com fallback -->
+                        <div class="character-img">
+                            <img src="./img/Mickey.jpg" alt="Mickey Mouse" class="img-cover" onerror="this.src='/placeholder.svg?height=150&width=150'; this.onerror=null;">
+                        </div>
+                    </div>
+                    <div class="character-name">Mickey Mouse</div>
+                    <div class="character-movie">Steamboat Willie</div>
+                    <div class="character-quote">"Tudo começou com um rato."</div>
+                </div>
+                <div class="character-card">
+                    <div class="character-img-wrapper">
+                        <div class="character-img">
+                            <img src="./img/elsa.jpg" alt="Elsa" class="img-cover" onerror="this.src='/placeholder.svg?height=150&width=150'; this.onerror=null;">
+                        </div>
+                    </div>
+                    <div class="character-name">Elsa</div>
+                    <div class="character-movie">Frozen</div>
+                    <div class="character-quote">"Livre estou!"</div>
+                </div>
+                <div class="character-card">
+                    <div class="character-img-wrapper">
+                        <div class="character-img">
+                            <img src="./img/Simba.jpg" alt="Simba" class="img-cover" onerror="this.src='/placeholder.svg?height=150&width=150'; this.onerror=null;">
+                        </div>
+                    </div>
+                    <div class="character-name">Simba</div>
+                    <div class="character-movie">O Rei Leão</div>
+                    <div class="character-quote">"Hakuna Matata!"</div>
+                </div>
+                <div class="character-card">
+                    <div class="character-img-wrapper">
+                        <div class="character-img">
+                            <img src="./img/woody 5.jpg" alt="Woody" class="img-cover" onerror="this.src='/placeholder.svg?height=150&width=150'; this.onerror=null;">
+                        </div>
+                    </div>
+                    <div class="character-name">Woody</div>
+                    <div class="character-movie">Toy Story</div>
+                    <div class="character-quote">"Ao infinito e além!"</div>
+                </div>
+                <div class="character-card">
+                    <div class="character-img-wrapper">
+                        <div class="character-img">
+                            <img src="./img/moana 1.jpg" alt="Moana" class="img-cover" onerror="this.src='/placeholder.svg?height=150&width=150'; this.onerror=null;">
+                        </div>
+                    </div>
+                    <div class="character-name">Moana</div>
+                    <div class="character-movie">Moana</div>
+                    <div class="character-quote">"O oceano me escolheu."</div>
+                </div>
+                <div class="character-card">
+                    <div class="character-img-wrapper">
+                        <div class="character-img">
+                            <img src="./img/Capitão america.jpg" alt="Capitão América" class="img-cover" onerror="this.src='/placeholder.svg?height=150&width=150'; this.onerror=null;">
+                        </div>
+                      
+                    </div>
+                    <div class="character-name">Capitão América</div>
+                    <div class="character-movie">Vingadores</div>
+                    <div class="character-quote">"Eu posso fazer isso o dia todo."</div>
+                </div>
+                <div class="character-card">
+                    <div class="character-img-wrapper">
+                        <div class="character-img">
+                            <img src="./img/18.jpg" alt="Buzz Lightyear" class="img-cover" onerror="this.src='/placeholder.svg?height=150&width=150'; this.onerror=null;">
+                        </div>
+                    </div>
+                    <div class="character-name">Buzz Lightyear</div>
+                    <div class="character-movie">Toy Story</div>
+                    <div class="character-quote">"Ao infinito e além!"</div>
+                </div>
+                <div class="character-card">
+                    <div class="character-img-wrapper">
+                        <div class="character-img">
+                            <img src="./img/bela.jpg" alt="Bela" class="img-cover" onerror="this.src='/placeholder.svg?height=150&width=150'; this.onerror=null;">
+                        </div>
+                    </div>
+                    <div class="character-name">Bela</div>
+                    <div class="character-movie">A Bela e a Fera</div>
+                    <div class="character-quote">"A beleza está no interior."</div>
+                </div>
+                <div class="character-card">
+                    <div class="character-img-wrapper">
+                        <div class="character-img">
+                            <img src="./img/stitch.jpg" alt="Stitch" class="img-cover" onerror="this.src='/placeholder.svg?height=150&width=150'; this.onerror=null;">
+                        </div>
+                    </div>
+                    <div class="character-name">Stitch</div>
+                    <div class="character-movie">Lilo & Stitch</div>
+                    <div class="character-quote">"Ohana quer dizer família."</div>
+                </div>
+                <div class="character-card">
+                    <div class="character-img-wrapper">
+                        <div class="character-img">
+                            <img src="./img/Relâmpago McQueen.jpg" alt="Relâmpago McQueen" class="img-cover" onerror="this.src='/placeholder.svg?height=150&width=150'; this.onerror=null;">
+                        </div>
+                    </div>
+                    <div class="character-name">Relâmpago McQueen</div>
+                    <div class="character-movie">Carros</div>
+                    <div class="character-quote">"Velocidade, eu sou a velocidade!"</div>
+                </div>
+                
+            </div>
+            <div class="character-navigation">
+                <div class="nav-dot active"></div>
+                <div class="nav-dot"></div>
+                <div class="nav-dot"></div>
+                <div class="nav-dot"></div>
+            </div>
+        </div>
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Lançamentos -->
+    <section id="lancamentos" class="releases">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-title">Próximos Lançamentos</h2>
+                <p class="section-subtitle">Fique por dentro dos filmes que estão por vir</p>
+            </div>
+            <div class="release-container">
+                <div class="release-card">
+                    <div class="release-img">
+                        <!-- Tag para imagem com fallback -->
+                        <img src="./img/Lilo 2.jpg" alt="Próximo Lançamento 1" class="img-cover" onerror="this.src='/placeholder.svg?height=450&width=300'; this.onerror=null;">
+                    </div>
+                    <div class="release-info">
+                        <span class="release-date">Em breve</span>
+                        <h3>Lilo & Stitch</h3>
+                        <div class="release-details">
+                            <span class="release-rating">★★★★★</span>
+                            <span class="release-genre">Animação</span>
+                        </div>
+                    </div>
+                    <div class="release-overlay">
+                        <div class="release-countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-number">15</span>
+                                <span class="countdown-label">Dias</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-small">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="release-card">
+                    <div class="release-img">
+                        <img src="./img/Elio.jpg" alt="Próximo Lançamento 2" class="img-cover" onerror="this.src='/placeholder.svg?height=450&width=300'; this.onerror=null;">
+                    </div>
+                    <div class="release-info">
+                        <span class="release-date">Em breve</span>
+                        <h3>Elio</h3>
+                        <div class="release-details">
+                            <span class="release-rating">★★★★☆</span>
+                            <span class="release-genre">Animação</span>
+                        </div>
+                    </div>
+                    <div class="release-overlay">
+                        <div class="release-countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-number">78</span>
+                                <span class="countdown-label">Dias</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-small">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="release-card">
+                    <div class="release-img">
+                        <img src="./img/Toy Story 5.jpg" alt="Próximo Lançamento 3" class="img-cover" onerror="this.src='/placeholder.svg?height=450&width=300'; this.onerror=null;">
+                    </div>
+                    <div class="release-info">
+                        <span class="release-date">Em breve</span>
+                        <h3>Toy Story 5</h3>
+                        <div class="release-details">
+                            <span class="release-rating">★★★★★</span>
+                            <span class="release-genre">Fantasia</span>
+                        </div>
+                    </div>
+                    <div class="release-overlay">
+                        <div class="release-countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-number">120</span>
+                                <span class="countdown-label">Dias</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-small">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+     <!-- Trailers -->
+<section id="trailers" class="trailers">
+    <div class="container">
+      <div class="section-heading light">
+        <h2 class="section-title">Trailers em Destaque</h2>
+        <p class="section-subtitle">Assista aos trailers dos filmes mais aguardados</p>
+      </div>
+  
+      <div class="trailers-grid">
+        
+        <!-- Trailer 1 -->
+        <div class="trailer-item">
+          <div class="trailer-video-container">
+            <input type="checkbox" id="play-trailer1" class="play-toggle" hidden>
+            <label for="play-trailer1" class="video-cover">
+              <img src="./img/lilo 4.jpg" alt="Capa do trailer">
+              <span class="play-button">▶</span>
+            </label>
+            <div class="video-wrapper">
+              <video class="trailer-video" controls>
+                <source src="./vídeos/Lilo.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos HTML5.
+              </video>
+            </div>
+          </div>
+          <div class="trailer-info">
+            <h3>Lilo e Stitch</h3>
+            <p>Estreia: <strong>Maio 2025</strong></p>
+            <div class="trailer-tags">
+              <span class="tag">Aventura</span>
+              <span class="tag">Família</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Trailer 2 -->
+        <div class="trailer-item">
+          <div class="trailer-video-container">
+            <input type="checkbox" id="play-trailer2" class="play-toggle" hidden>
+            <label for="play-trailer2" class="video-cover">
+              <img src="./img/elio 6.jpg" alt="Capa do trailer">
+              <span class="play-button">▶</span>
+            </label>
+            <div class="video-wrapper">
+              <video class="trailer-video" controls>
+                <source src="./vídeos/Elio.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos HTML5.
+              </video>
+            </div>
+          </div>
+          <div class="trailer-info">
+            <h3>Elio</h3>
+            <p>Estreia: <strong>Junho 2025</strong></p>
+            <div class="trailer-tags">
+              <span class="tag">Animação</span>
+              <span class="tag">Comédia</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+              
+      </section>
+    
+    
+  
+    <!-- Galeria -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-title">Galeria Mágica</h2>
+                <p class="section-subtitle">Momentos inesquecíveis dos filmes Disney</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item wide">
+                    <!-- Tag para imagem com fallback -->
+                    <img src="./img/11.jpg" alt="Galeria 1" onerror="this.src='/placeholder.svg?height=300&width=600'; this.onerror=null;">
+                    <div class="gallery-caption">
+                        <h4>A Liberdade de Elsa</h4>
+                        <p>Elsa se libertando de suas amarras e abraçando sua verdadeira identidade, um momento de empoderamento e transformação. </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/rei.jpg" alt="Galeria 2" onerror="this.src='/placeholder.svg?height=300&width=300'; this.onerror=null;">
+                    <div class="gallery-caption">
+                        <h4>Hakuna Matata </h4>
+                        <p>D A música entoada por Timão e Pumba, que ensina Simba a esquecer os problemas e viver a vida</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/13.jpg" alt="Galeria 3" onerror="this.src='/placeholder.svg?height=300&width=300'; this.onerror=null;">
+                    <div class="gallery-caption">
+                        <h4>A Família se Superando </h4>
+                        <p> As cenas em que a família super-heróis enfrenta desafios juntos, mostrando a importância da união e do amor. </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/15.jpg" alt="Galeria 4" onerror="this.src='/placeholder.svg?height=300&width=300'; this.onerror=null;">
+                    <div class="gallery-caption">
+                        <h4> A Fera Liberta Bela por Amor </h4>
+                        <p> A Fera liberando Bela para visitar seu pai, um ato de amor e confiança.  </p>
+                    </div>
+                </div>
+                
+                   
+            <div class="gallery-more">
+                <a href="galeria.html" class="btn btn-primary">Ver Mais Imagens</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="sparkles"></div>
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-content">
+                    <h2>Fique por dentro da magia</h2>
+                    <p>Assine nossa newsletter e receba em primeira mão informações sobre lançamentos, eventos e promoções especiais.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="newsletter-input" placeholder="Seu melhor e-mail" required>
+                            <button type="submit" class="newsletter-btn">
+                                <span>Assinar</span>
+                                <span class="btn-shine"></span>
+                            </button>
+                        </div>
+                        <div class="newsletter-benefits">
+                            <div class="benefit-item">✓ Notícias exclusivas</div>
+                            <div class="benefit-item">✓ Promoções especiais</div>
+                            <div class="benefit-item">✓ Conteúdo antecipado</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="newsletter-image">
+                    <!-- Tag para imagem com fallback -->
+                    <img src="./img/castelo.jpg" alt="Newsletter" onerror="this.src='/placeholder.svg?height=300&width=300'; this.onerror=null;">
+                    <div class="newsletter-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-col">
+                        <h3>Mundo Disney</h3>
+                        <p>Seu portal para o universo mágico dos filmes Disney, Pixar, Marvel e muito mais.</p>
+                    
+                    </div>
+                    <div class="footer-col">
+                        <h3>Links Mágicos</h3>
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#filmes">Filmes</a></li>
+                            <li><a href="#personagens">Personagens</a></li>
+                            <li><a href="#lancamentos">Lançamentos</a></li>
+                            <li><a href="#trailers">Trailers</a></li>
+                            <li><a href="#galeria">Galeria</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Categorias</h3>
+                        <ul>
+                            <li><a href="#">Animações Clássicas</a></li>
+                            <li><a href="#">Princesas Disney</a></li>
+                            <li><a href="#">Pixar</a></li>
+                            <li><a href="#">Marvel</a></li>
+                            <li><a href="#">Star Wars</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Contato</h3>
+                        <ul class="contact-info">
+                            <li><span>✉</span> contato@mundodisney.com</li>
+                            <li><span>☎</span> (11) 1234-5678</li>
+                            <li><span>📍</span> EPCOT: Bay Lake, Flórida 32836, EUA</li>
+                        </ul>
+                        <div class="footer-app">
+                            <p>Baixe nosso aplicativo:</p>
+                            <div class="app-buttons">
+                                <a href="https://apps.apple.com/br/app/disney/id1446075923" class="app-btn" target="_blank" rel="noopener noreferrer">App Store</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.disney.disneyplus" class="app-btn" target="_blank" rel="noopener noreferrer">Google Play</a>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    &copy; 2024 Mundo Disney. Feito por: Heloisa Sabino Bolognesi  
+                </div>
+                <div class="footer-links">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+        <div class="castle-footer"></div>
+    </footer>
+
+    <!-- Script para verificar imagens e inicializar vídeos -->
+    
+</body>
+</html>
